@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2AEC6D1-E56B-4827-A80C-30672AC29FE3}|AntiFraud.Api\\AntiFraud.Api.csproj|c:\\users\\hp\\desktop\\test\\anti-fraud\\antifraud.api\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2AEC6D1-E56B-4827-A80C-30672AC29FE3}|AntiFraud.Api\\AntiFraud.Api.csproj|solutionrelative:antifraud.api\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF19445-1D3C-4E44-88B5-AF23DB4FECA1}|AntiFraud.Application\\AntiFraud.Application.csproj|c:\\users\\hp\\desktop\\test\\anti-fraud\\antifraud.application\\handlers\\validatetransactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF19445-1D3C-4E44-88B5-AF23DB4FECA1}|AntiFraud.Application\\AntiFraud.Application.csproj|solutionrelative:antifraud.application\\handlers\\validatetransactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FC12531-B62B-4B6E-B9BA-D94309282B3F}|AntiFraud.Infrastructure\\AntiFraud.Infrastructure.csproj|c:\\users\\hp\\desktop\\test\\anti-fraud\\antifraud.infrastructure\\storage\\ordenesachstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FC12531-B62B-4B6E-B9BA-D94309282B3F}|AntiFraud.Infrastructure\\AntiFraud.Infrastructure.csproj|solutionrelative:antifraud.infrastructure\\storage\\ordenesachstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FC12531-B62B-4B6E-B9BA-D94309282B3F}|AntiFraud.Infrastructure\\AntiFraud.Infrastructure.csproj|c:\\users\\hp\\desktop\\test\\anti-fraud\\antifraud.infrastructure\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FC12531-B62B-4B6E-B9BA-D94309282B3F}|AntiFraud.Infrastructure\\AntiFraud.Infrastructure.csproj|solutionrelative:antifraud.infrastructure\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13ABDE26-479C-4FA5-A197-C7BBCF88D86C}|AntiFraud.Domain\\AntiFraud.Domain.csproj|c:\\users\\hp\\desktop\\test\\anti-fraud\\antifraud.domain\\interfaces\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13ABDE26-479C-4FA5-A197-C7BBCF88D86C}|AntiFraud.Domain\\AntiFraud.Domain.csproj|solutionrelative:antifraud.domain\\interfaces\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13ABDE26-479C-4FA5-A197-C7BBCF88D86C}|AntiFraud.Domain\\AntiFraud.Domain.csproj|c:\\users\\hp\\desktop\\test\\anti-fraud\\antifraud.domain\\entities\\ordenach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13ABDE26-479C-4FA5-A197-C7BBCF88D86C}|AntiFraud.Domain\\AntiFraud.Domain.csproj|solutionrelative:antifraud.domain\\entities\\ordenach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Api\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "AntiFraud.Api\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Api\\ServiceRegistration.cs",
+              "RelativeToolTip": "AntiFraud.Api\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA9wBwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:57:14.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Infrastructure\\Repositories\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "AntiFraud.Infrastructure\\Repositories\\TransactionRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Infrastructure\\Repositories\\TransactionRepository.cs",
+              "RelativeToolTip": "AntiFraud.Infrastructure\\Repositories\\TransactionRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:40:31.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Domain\\Interfaces\\ITransactionRepository.cs",
+              "RelativeDocumentMoniker": "AntiFraud.Domain\\Interfaces\\ITransactionRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Domain\\Interfaces\\ITransactionRepository.cs",
+              "RelativeToolTip": "AntiFraud.Domain\\Interfaces\\ITransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:39:52.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValidateTransactionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Application\\Handlers\\ValidateTransactionHandler.cs",
+              "RelativeDocumentMoniker": "AntiFraud.Application\\Handlers\\ValidateTransactionHandler.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Application\\Handlers\\ValidateTransactionHandler.cs",
+              "RelativeToolTip": "AntiFraud.Application\\Handlers\\ValidateTransactionHandler.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAADsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:38:02.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrdenesAchStore.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Infrastructure\\Storage\\OrdenesAchStore.cs",
+              "RelativeDocumentMoniker": "AntiFraud.Infrastructure\\Storage\\OrdenesAchStore.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Infrastructure\\Storage\\OrdenesAchStore.cs",
+              "RelativeToolTip": "AntiFraud.Infrastructure\\Storage\\OrdenesAchStore.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAASwA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:19:47.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdenACH.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Domain\\Entities\\OrdenACH.cs",
+              "RelativeDocumentMoniker": "AntiFraud.Domain\\Entities\\OrdenACH.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\test\\Anti-Fraud\\AntiFraud.Domain\\Entities\\OrdenACH.cs",
+              "RelativeToolTip": "AntiFraud.Domain\\Entities\\OrdenACH.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:15:47.779Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
