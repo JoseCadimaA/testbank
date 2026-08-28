@@ -1,16 +1,15 @@
-﻿using AntiFraud.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AntiFraud.Domain.Entities;
 
-namespace AntiFraud.Domain.Interfaces
+namespace AntiFraud.Domain.Interfaces;
+
+public interface ITransactionRepository
 {
-    public interface ITransactionRepository
-    {
-        Task<bool> ValidateAmountTransaction(Guid TransactionId, decimal amount);
-        Task<bool> AddOrdenAch(OrdenACH ordenACH);
-        Task<decimal> GetTotalTransferBySourceAccount(Guid sourceAccountId);
-    }
+    Task<TransactionValidationResult> ValidateAndRegisterAsync(
+        OrdenACH ordenACH,
+        CancellationToken cancellationToken = default);
 }
+
+public record TransactionValidationResult(
+    bool IsApproved,
+    decimal AccumulatedAmount,
+    string? RejectionReason = null);

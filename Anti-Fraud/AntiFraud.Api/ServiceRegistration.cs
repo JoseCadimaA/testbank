@@ -5,6 +5,7 @@ using AntiFraud.Infrastructure.Messaging;
 using AntiFraud.Infrastructure.Repositories;
 using AntiFraud.Infrastructure.Storage;
 using Microsoft.Extensions.DependencyInjection;
+using StackExchange.Redis;
 
 namespace AntiFraud.Api
 {
@@ -20,13 +21,19 @@ namespace AntiFraud.Api
 
         public static void RegisterInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
+            var redisConnectionString = configuration["Redis:ConnectionString"]
+                ?? throw new InvalidOperationException("Redis:ConnectionString is not configured.");
+            var kafkaBootstrapServers = configuration["Kafka:BootstrapServers"]
+                ?? throw new InvalidOperationException("Kafka:BootstrapServers is not configured.");
 
-            services.AddSingleton<IKafkaProducer>(sp => new KafkaProducer(configuration["Kafka:BootstrapServers"]));
+            services.AddSingleton<IKafkaProducer>(_ => new KafkaProducer(kafkaBootstrapServers));
+            services.AddSingleton<IConnectionMultiplexer>(_ =>
+                ConnectionMultiplexer.Connect(redisConnectionString));
 
             services.AddHostedService<KafkaConsumer>();
+            services.AddHostedService<RedisFraudLimitInitializer>();
 
             services.AddScoped<ITransactionRepository, TransactionRepository>();
-            services.AddSingleton<OrdenesAchStore>();
         }
     }
 }

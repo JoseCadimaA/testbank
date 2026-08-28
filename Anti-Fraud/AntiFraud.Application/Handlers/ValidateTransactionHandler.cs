@@ -36,29 +36,23 @@ namespace AntiFraud.Application.Handlers
             var evento = new UpdateStatusEvent();
             evento.transactionId = req.TransactionId;
 
-            decimal totalAcumulado = await _transactionRepository.GetTotalTransferBySourceAccount(req.SourceAccountId);
-            totalAcumulado += req.Amount;
-
-            if (req.Amount > 2000 || totalAcumulado > 20000)
+            var ordenACH = new OrdenACH
             {
-                evento.status = TransactionStatus.Rejected;
-            }
-            else
-            {
-                evento.status = TransactionStatus.Approved;
+                TransactionId = req.TransactionId,
+                Amount = req.Amount,
+                CreatedAt = req.CreatedAt,
+                SourceAccountId = req.SourceAccountId,
+                TargetAccountId = req.TargetAccountId,
+                TransferTypeId = req.TransferTypeId,
+            };
 
-                OrdenACH ordenACH = new OrdenACH()
-                {
-                    TransactionId = req.TransactionId,
-                    Amount = req.Amount,
-                    CreatedAt = req.CreatedAt,
-                    SourceAccountId = req.SourceAccountId,
-                    TargetAccountId = req.TargetAccountId,
-                    TransferTypeId = req.TransferTypeId,
-                };
+            var validation = await _transactionRepository.ValidateAndRegisterAsync(
+                ordenACH,
+                cancellationToken);
 
-                await _transactionRepository.AddOrdenAch(ordenACH);
-            }
+            evento.status = validation.IsApproved
+                ? TransactionStatus.Approved
+                : TransactionStatus.Rejected;
 
             await _kafkaProducer.PublishAsync("transactions-update-status", evento);
 

@@ -17,9 +17,28 @@ services:
       - "6060:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@ejemplo.com
-      PGADMIN_DEFAULT_PASSWORD: admin 
+      PGADMIN_DEFAULT_PASSWORD: admin
     depends_on:
       - postgres
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    command: redis-server --appendonly yes
+
+  redis-insight:
+    image: redis/redisinsight:latest
+    container_name: redis-insight
+    ports:
+      - "5540:5540"
+    volumes:
+      - redisinsight:/data
+    depends_on:
+      - redis
 
   zookeeper:
     image: confluentinc/cp-zookeeper:5.5.3
@@ -79,8 +98,12 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       Kafka__BootstrapServers: kafka:29092
+      Redis__ConnectionString: redis:6379
     depends_on:
       - kafka
+      - redis
 
 volumes:
   pgdata:
+  redisdata:
+  redisinsight:
